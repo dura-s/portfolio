@@ -1,0 +1,116 @@
+:root{
+  --bg:#05070f;
+  --card:#0d1224;
+  --accent:#7c7cff;
+  --text:#f1f5ff;
+  --muted:#9aa4bf;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Inter',sans-serif;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+}
+
+.container{
+  max-width:1200px;
+  margin:auto;
+  padding:60px 20px;
+}
+
+/* HERO */
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.2fr 1fr;
+  gap:40px;
+}
+
+span{
+  color:var(--accent);
+}
+
+.cta{
+  display:inline-block;
+  background:var(--accent);
+  color:#000;
+  padding:14px 28px;
+  border-radius:30px;
+  text-decoration:none;
+  margin-top:20px;
+}
+
+.links a{
+  margin-right:15px;
+  color:var(--accent);
+  text-decoration:none;
+}
+
+/* TERMINAL */
+.terminal{
+  background:#02040a;
+  border-radius:18px;
+  padding:20px;
+  font-family:monospace;
+  color:#7CFC98;
+}
+
+/* CARDS */
+.capabilities,
+.projects{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:30px;
+  margin-top:30px;
+}
+
+.card{
+  background:var(--card);
+  padding:24px;
+  border-radius:20px;
+}
+
+/* LOGO MARQUEE */
+.logo-marquee{
+  overflow:hidden;
+  margin-top:30px;
+}
+
+.logo-track{
+  display:flex;
+  gap:60px;
+  animation:marquee 20s linear infinite;
+}
+
+.logo-track img{
+  width:64px;
+}
+
+@keyframes marquee{
+  from{transform:translateX(-100%)}
+  to{transform:translateX(100%)}
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:40px;
+  color:var(--muted);
+}
+
+@media(max-width:900px){
+  .hero-grid{
+    grid-template-columns:1fr;
+  }
+}
