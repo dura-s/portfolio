@@ -2,81 +2,255 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dureti Siraj | Portfolio</title>
 
-  <!-- CSS LINK -->
-  <link rel="stylesheet" href="style.css" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 
-  <!-- Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="container hero-grid">
-    <div>
-      <h1>Hi, I'm <span>Dureti Siraj</span></h1>
-      <p>
-        A multidisciplinary student combining Software Engineering,
-        Graphic Design, and AI-driven problem solving.
+  <header class="header">
+    <div class="logo">Dureti<span>.</span></div>
+    <nav class="nav">
+      <a href="#home" data-section="home" class="nav-link active">Home</a>
+      <a href="#about" data-section="about" class="nav-link">About</a>
+      <a href="#projects" data-section="projects" class="nav-link">Projects</a>
+      <a href="#design" data-section="design" class="nav-link">Design</a>
+      <a href="#contact" data-section="contact" class="nav-link">Contact</a>
+    </nav>
+    <button id="theme-toggle" class="icon-button" aria-label="Toggle theme">
+      <i class="ri-sun-line"></i>
+    </button>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>
+        Frontend Developer & <span>UI/UX Designer</span>
+      </h1>
+      <p class="hero-subtitle">
+        3rd-year Computer Science student crafting modern, animated,
+        and user-focused web experiences. Currently growing into full‑stack
+        development with Node.js and modern tooling.
       </p>
 
-      <a href="#projects" class="cta">Explore My Work</a>
+      <div class="hero-tags">
+        <span>React</span>
+        <span>TypeScript</span>
+        <span>Tailwind‑inspired UI</span>
+        <span>Figma</span>
+      </div>
 
-      <div class="links">
-        <a href="https://github.com/your-github-username" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/your-linkedin-username" target="_blank">LinkedIn</a>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary">View My Work</a>
+        <a href="#contact" class="btn outline">Contact Me</a>
       </div>
     </div>
 
-    <div class="terminal" id="terminal"></div>
-  </div>
-</section>
+    <div class="hero-image">
+      <div class="glow"></div>
+      <img src="du.jpg" alt="Dureti Siraj">
+    </div>
+  </section>
 
-<!-- SKILLS -->
-<section class="container">
-  <h2>Core Capabilities</h2>
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m <strong>Dureti Siraj</strong>, a Computer Science student with a strong
+      focus on frontend development and UI/UX design. I combine clean, accessible
+      interfaces with smooth interactions to build engaging digital experiences.
+      Right now I’m deepening my skills in TypeScript, React, and backend
+      development using Node.js.
+    </p>
+  </section>
 
-  <div class="capabilities">
-    <div class="card">Frontend Engineering</div>
-    <div class="card">Backend & Logic (Java, Python)</div>
-    <div class="card">Design & UX (Figma, Photoshop)</div>
-    <div class="card">Problem Solving</div>
-  </div>
+  <!-- SKILLS -->
+  <section class="skills" id="skills">
+    <h2>Skills</h2>
+    <div class="skills-track">
+      <i class="ri-terminal-box-line" title="C++"></i>
+      <i class="ri-css3-fill" title="CSS3"></i>
+      <i class="ri-figma-fill" title="Figma"></i>
+      <i class="ri-github-fill" title="Git"></i>
+      <i class="ri-html5-fill" title="HTML5"></i>
+      <i class="ri-cup-line" title="Java"></i>
+      <i class="ri-javascript-fill" title="JavaScript"></i>
+      <i class="ri-database-2-line" title="MySQL"></i>
+      <i class="ri-image-edit-fill" title="Photoshop"></i>
+      <i class="ri-code-line" title="PHP"></i>
+      <i class="ri-python-fill" title="Python"></i>
+      <i class="ri-reactjs-fill" title="React"></i>
+      <!-- Duplicate for seamless scroll -->
+      <i class="ri-terminal-box-line" title="C++"></i>
+      <i class="ri-css3-fill" title="CSS3"></i>
+      <i class="ri-figma-fill" title="Figma"></i>
+      <i class="ri-github-fill" title="Git"></i>
+      <i class="ri-html5-fill" title="HTML5"></i>
+      <i class="ri-cup-line" title="Java"></i>
+      <i class="ri-javascript-fill" title="JavaScript"></i>
+      <i class="ri-database-2-line" title="MySQL"></i>
+      <i class="ri-image-edit-fill" title="Photoshop"></i>
+      <i class="ri-code-line" title="PHP"></i>
+      <i class="ri-python-fill" title="Python"></i>
+      <i class="ri-reactjs-fill" title="React"></i>
+    </div>
 
-  <h3>Tech Stack</h3>
-  <div class="logo-marquee">
-    <div class="logo-track">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg">
+    <div class="tools-grid" aria-label="Languages and tools">
+      <div class="tool-card"><i class="ri-html5-fill"></i><span>HTML5</span></div>
+      <div class="tool-card"><i class="ri-css3-fill"></i><span>CSS3</span></div>
+      <div class="tool-card"><i class="ri-javascript-fill"></i><span>JavaScript</span></div>
+      <div class="tool-card"><i class="ri-code-s-slash-line"></i><span>TypeScript</span></div>
+      <div class="tool-card"><i class="ri-reactjs-fill"></i><span>React</span></div>
+      <div class="tool-card"><i class="ri-nodejs-fill"></i><span>Node.js</span></div>
+      <div class="tool-card"><i class="ri-database-2-line"></i><span>MySQL</span></div>
+      <div class="tool-card"><i class="ri-github-fill"></i><span>Git & GitHub</span></div>
+      <div class="tool-card"><i class="ri-figma-fill"></i><span>Figma</span></div>
+      <div class="tool-card"><i class="ri-brush-line"></i><span>UI/UX</span></div>
+      <div class="tool-card"><i class="ri-terminal-box-line"></i><span>C++</span></div>
+      <div class="tool-card"><i class="ri-cup-line"></i><span>Java</span></div>
+      <div class="tool-card"><i class="ri-code-line"></i><span>PHP</span></div>
+      <div class="tool-card"><i class="ri-python-fill"></i><span>Python</span></div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <p class="section-lead">
+      Selected work from my GitHub, with tech stack and demos (when available).
+    </p>
+
+    <div class="projects-toolbar">
+      <input
+        id="project-search"
+        class="input"
+        type="search"
+        placeholder="Search projects (e.g. NOVA, TypeScript)…"
+        autocomplete="off"
+      >
+      <div id="project-filters" class="filters" aria-label="Project filters"></div>
+    </div>
+
+    <div id="project-grid" class="project-grid" aria-live="polite"></div>
+    <div id="project-empty" class="empty-state" hidden>
+      <p>No projects match your search.</p>
+    </div>
+  </section>
+
+  <!-- UI/UX DESIGN -->
+  <section class="design" id="design">
+    <h2>UI/UX Design Projects</h2>
+    <p class="section-lead">
+      Explore my live Figma UI/UX projects below:
+    </p>
+
+    <div class="design-grid">
+      <article class="design-card">
+        <h3>Food App</h3>
+        <p>Modern food delivery and discovery app UI/UX design.</p>
+        <div class="project-meta">
+          <span>Figma</span>
+          <span>UI/UX</span>
+        </div>
+        <div class="figma-embed">
+          <iframe style="border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 8px; width: 100%; min-height: 400px;" allowfullscreen src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/design/LLWK6fWBgj4uojIDWdQlT6/foodweb?m=auto&t=eEN9lFFMXqownsGW-6"></iframe>
+        </div>
+        <div class="project-links">
+          <a href="https://www.figma.com/design/LLWK6fWBgj4uojIDWdQlT6/foodweb?m=auto&t=eEN9lFFMXqownsGW-6" class="link" target="_blank">Open in Figma</a>
+        </div>
+      </article>
+
+      <article class="design-card">
+        <h3>Agriculture App</h3>
+        <p>UI/UX for an agriculture management and marketplace platform.</p>
+        <div class="project-meta">
+          <span>Figma</span>
+          <span>UI/UX</span>
+        </div>
+        <div class="figma-embed">
+          <iframe style="border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 8px; width: 100%; min-height: 400px;" allowfullscreen src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/design/9GnQUM3geDt3kUxieDU45F/agriculture?m=auto&t=eEN9lFFMXqownsGW-6"></iframe>
+        </div>
+        <div class="project-links">
+          <a href="https://www.figma.com/design/9GnQUM3geDt3kUxieDU45F/agriculture?m=auto&t=eEN9lFFMXqownsGW-6" class="link" target="_blank">Open in Figma</a>
+        </div>
+      </article>
+
+      <article class="design-card">
+        <h3>Coffee App</h3>
+        <p>UI/UX for a coffee ordering and discovery mobile app.</p>
+        <div class="project-meta">
+          <span>Figma</span>
+          <span>UI/UX</span>
+        </div>
+        <div class="figma-embed">
+          <iframe style="border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 8px; width: 100%; min-height: 400px;" allowfullscreen src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/design/R0PyK7JYx28XEBhIKqe3ck/project?m=auto&t=eEN9lFFMXqownsGW-6"></iframe>
+        </div>
+        <div class="project-links">
+          <a href="https://www.figma.com/design/R0PyK7JYx28XEBhIKqe3ck/project?m=auto&t=eEN9lFFMXqownsGW-6" class="link" target="_blank">Open in Figma</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>
+      Have a project, internship, or collaboration in mind?
+      Let’s build something impactful together.
+    </p>
+
+    <form id="contact-form">
+
+      <!-- Replace YOUR_FORMSPREE_ENDPOINT with your Formspree endpoint after signup -->
+      <form id="contact-form" action="https://formspree.io/f/mdalbyry" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn primary">Send Message</button>
+      </form>
+      <div id="form-success" style="display:none;color:green;margin-top:1em;">Thank you! Your message has been sent.</div>
+      <script>
+        // Show a success message after submission (optional, for better UX)
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+          setTimeout(function() {
+            document.getElementById('form-success').style.display = 'block';
+          }, 500);
+        });
+      </script>
+
+    <div class="socials">
+      <a href="https://github.com/dura-s" target="_blank"><i class="ri-github-fill"></i></a>
+      <a href="https://www.linkedin.com/in/dureti-siraj" target="_blank"><i class="ri-linkedin-box-fill"></i></a>
+      <a href="mailto:hasinasiraj23@gmail.com"><i class="ri-mail-fill"></i></a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Dureti Siraj — Designing. Developing. Evolving.</p>
+  </footer>
+
+  <div id="project-modal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close="true"></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close icon-button" data-close="true" aria-label="Close project details">
+        <i class="ri-close-line"></i>
+      </button>
+      <h3 id="modal-title"></h3>
+      <p id="modal-desc" class="modal-desc"></p>
+      <div id="modal-tags" class="project-meta"></div>
+      <div id="modal-links" class="modal-links"></div>
     </div>
   </div>
-</section>
 
-<!-- PROJECTS -->
-<section id="projects" class="container">
-  <h2>Projects</h2>
-
-  <div class="projects">
-    <div class="card">AI Price Shock Alert</div>
-    <div class="card">University Safety System</div>
-    <div class="card">Smart Attendance</div>
-  </div>
-</section>
-
-<footer>
-  © 2026 Dureti Siraj
-</footer>
-
-<!-- JS LINK -->
-<script src="portfolio.js"></script>
+  <!-- JS -->
+  <script src="portfolio.js"></script>
 </body>
 </html>
